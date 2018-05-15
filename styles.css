@@ -31,12 +31,20 @@ a:visited {
    color: white;
 }
 
+.cloud_pic {
+  padding-right: 8em;
+}
+
 .centered {
     position: absolute;
-    top: 60%;
-    left: 40%;
-    transform: translate(-40%, -60%);
-    padding-left: 8em;
+    /* top: 60%;
+    left: 40%; */
+    top: 70px;
+    left:30px;
+    margin-top: 85px;
+    transform: translate(-30%, -70%);
+    padding-left: 30em;
+    padding-top: 30em;
 }
 
 #profile_pic {
@@ -57,22 +65,31 @@ a:visited {
   padding-bottom: 10em;
 }
 
+#skill_paragraph {
+  font-size: 16px;
+}
+
 #verticaltext{
   height: 100px;
   width: 100px;
   transform: rotate(270deg);
+
 /*play with margin */
   /* vertical-align: baseline; */
-  /* writing-mode: vertical-lr; */
+  /* writing-mode: vertical-rl;
+  text-orientation: sideways; */
 
-	/* transform-origin: left top 0; */
+	transform-origin: left center 50;
   color: white;
-        }
+}
+
+
 
 #facts {
   font-size: 18px;
   padding: 1em;
   padding-top: 2em;
+  padding-bottom: 8em;
   text-align: center;
   color: white;
 }
@@ -89,6 +106,15 @@ a:visited {
   padding-bottom: 8em;
 }
 
+#bottomcontent {
+  color: white;
+}
+
+#projects {
+  text-align: center;
+}
+
 footer {
   padding-top: 10em;
+  color: white
 }
