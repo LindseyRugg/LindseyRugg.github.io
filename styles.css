@@ -1,5 +1,6 @@
 body {
 background-color: gray;
+margin: 0 auto;
 }
 
 h1 {
@@ -15,14 +16,43 @@ a:visited {
   color: lightcoral;
 }
 
+/* The navigation bar */
+#navbar {
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    z-index:1;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+#navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+#navbar a:hover {
+    background: aqua;
+    color: black;
+}
+
+/* Main content */
+#intro {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
 #topcontent {
   padding-bottom: 10em;
 }
 
 #hello {
   padding-bottom: 10em;
+  padding-top: 5em;
 }
-
 
 #about.container {
   /* padding: 3em; */
@@ -33,6 +63,9 @@ a:visited {
 
 .cloud_pic {
   padding-right: 8em;
+  overflow: hidden;
+  /* margin: 0;
+  padding: 1px 0 0 0; */
 }
 
 .centered {
@@ -62,6 +95,7 @@ a:visited {
 #skills {
   color: white;
   text-align: center;
+  padding-top: 5em;
   padding-bottom: 10em;
 }
 
@@ -71,15 +105,18 @@ a:visited {
 
 #verticaltext{
   height: 100px;
-  width: 100px;
+  width: 75px;
   transform: rotate(270deg);
+  margin-top: 10em;
+  white-space: nowrap;
+  /* right: 2em; */
 
 /*play with margin */
   /* vertical-align: baseline; */
   /* writing-mode: vertical-rl;
   text-orientation: sideways; */
 
-	transform-origin: left center 50;
+	/* transform-origin: left center 50; */
   color: white;
 }
 
@@ -87,11 +124,14 @@ a:visited {
 
 #facts {
   font-size: 18px;
-  padding: 1em;
   padding-top: 2em;
   padding-bottom: 8em;
   text-align: center;
   color: white;
+}
+
+#projects {
+  padding-top: 5em;
 }
 
 .ul {
@@ -108,13 +148,91 @@ a:visited {
 
 #bottomcontent {
   color: white;
+
 }
 
 #projects {
   text-align: center;
 }
 
+.pic {
+   width: 300px;
+   height: 300px;
+   margin: 10px;
+   float: left;
+   border: 5px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 0px 0px 5px #aaa;
+   display: block;
+   position: relative;
+}
+
+a.link {
+   background:url( Link image URL)
+   center no-repeat;
+   background-size:50px 50px;
+   display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-999px;
+   width:50px;
+   height:50px;
+   position:relative;
+   top:-15px;
+   opacity: 0;
+   transition: opacity 0.1s 0s ease-in-out;
+}
+
+.middle {
+   width: 300px;
+   height: 300px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   overflow:visible;
+   border:5px solid rgba(0,0,0,0.9);
+   box-sizing:border-box;
+   transition: all 0.4s ease-in-out;
+}
+
+.middle:hover {
+   opacity: 1;
+   border:125px solid rgba(0,0,0,0.7);
+}
+
+.middle:hover a.link {
+   opacity:1;
+   transition-delay: 0.3s;
+}
+
+.caption {
+  text-align: center;
+}
+
+#id {
+  text-align: center;
+}
+
+#contact ul {
+  list-style: none;
+  display: block;
+  position: relative;
+  text-align: center;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  width: 400px;
+}
+
 footer {
+  text-align: center;
   padding-top: 10em;
   color: white
+  margin-bottom: 0px;
+  padding-bottom: 10px;
 }
