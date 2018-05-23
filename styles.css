@@ -271,8 +271,13 @@ footer {
       position: relative;
       display: block;
       color: white;
+      max-width: 700px;
     }
     .cloud_pic img {
       display: none;
+    }
+    #img-1 {
+      position: relative;
+      padding-left: 2em;
     }
   }
