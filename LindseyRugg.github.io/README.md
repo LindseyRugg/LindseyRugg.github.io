@@ -1,1 +1,0 @@
-# LindseyRugg.github.io
