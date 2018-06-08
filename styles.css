@@ -281,4 +281,13 @@ footer {
       position: relative;
       padding-left: 2em;
     }
+
   }
+
+
+@media only screen and (max-width: 900px) {
+  #verticaltext {
+    transform: none;
+    padding-left: 10em;
+  }
+}
